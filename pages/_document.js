@@ -1,10 +1,8 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import ReactGA from 'react-ga';
-import { Analytics } from '../lib/analytics'
+
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
-    Analytics.logPageView(ctx.asPath)
     return { ...initialProps }
   }
   
@@ -13,7 +11,20 @@ class MyDocument extends Document {
 
     return (
       <Html lang='en'>
-        <Head />
+        <Head >
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169904775-1"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              console.log('Set tag');
+              gtag('config', 'UA-169904775-1');
+              `,
+          }}
+        />
+          </Head>
         <body>
           <Main />
           <NextScript />
