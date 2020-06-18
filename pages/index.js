@@ -2,7 +2,6 @@ import { Logo } from '../components/logo'
 import styles from './index.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
-
 export default (props) => {
     return (
         <div className={styles.container}>
