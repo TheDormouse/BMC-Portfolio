@@ -1,4 +1,3 @@
-import BMC from '../public/bmc.svg'
 import { Logo } from '../components/logo'
 import styles from './index.module.css'
 import Head from 'next/head'
