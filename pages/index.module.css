@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.container {
+    display: block;
+    width: 70%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.social {
+    font-family: 'Lato', sans-serif;
+    bottom: 10px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.social .days {
+    font-size: .5em;
+}
+
+.social .icon {
+    margin-left: 10px;
+}
+
+.skiplink {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+  }
+  
+  .skiplink:focus {
+    top: 0;
+  }
