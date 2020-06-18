@@ -10,6 +10,7 @@ export default (props) => {
         <title>Ben Martinez-Cain - FullStack Web Developer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Ben Martinez-Cain - FullStack Web Developer | Node.js | React | Next.js | SQL | MongoDB | GraphQL | Python | Django" />
+        <link rel='preconnect' href='https://fonts.googleapis.com/css2?family=Lato&display=swap' />
       </Head>
       <a className={styles.skiplink}href="#main">Skip to main</a>
       <heading>
