@@ -20,7 +20,6 @@ export default (props) => {
                 <a href='https://github.com/TheDormouse' rel="noreferrer" target='_blank'><img alt='Github' className={styles.icon} src='github.svg' width='50px' height='50px' /></a>
                 <a href='https://www.linkedin.com/in/benmartinezcain/' rel="noreferrer" target='_blank'><img alt='LinkedIn' src='linkedin.svg' className={styles.icon} width='50px' height='50px' /></a>
                 <a href='https://twitter.com/Mad_Marchy' rel="noreferrer" target='_blank'><img src='twitter.svg' alt='Twitter' className={styles.icon} width='50px' height='50px' /></a>
-                <Link href='/'><a><p className={styles.days}>#100DaysOfCode</p></a></Link>
             </main>
         </div>
     )
